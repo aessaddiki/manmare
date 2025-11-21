@@ -1,0 +1,22 @@
+[{
+    "name": "Soporte 24/7",
+    "level": "Experto"
+}, {
+    "name": "TETRA / RF",
+    "level": "Alto"
+}, {
+    "name": "Virtualización (ESXi, Hyper-V)",
+    "level": "Alto"
+}, {
+    "name": "Windows Server & AD",
+    "level": "Alto"
+}, {
+    "name": "Linux (CentOS)",
+    "level": "Medio"
+}, {
+    "name": "SQL (Oracle / MySQL)",
+    "level": "Medio"
+}, {
+    "name": "PowerShell",
+    "level": "Medio"
+}]

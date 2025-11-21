@@ -1,0 +1,17 @@
+[
+  {
+    "name": "GitHub",
+    "url": "https://github.com/abderrahmanessaddiki",
+    "icon": "fab fa-github"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/abderrahman-essaddiki-1b58a12b7/",
+    "icon": "fab fa-linkedin-in"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/abderrahmanessaddiki",
+    "icon": "fab fa-twitter"
+  }
+]
