@@ -1,0 +1,129 @@
+/* EXPERIENCIA */
+#experience {
+  padding-top: 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#experience h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  padding-left: 40px; /* alineado con timeline */
+}
+
+/* Contenedor del timeline */
+.experience-timeline {
+  position: relative;
+  padding-left: 40px; /* espacio para bola + línea */
+}
+
+/* Línea vertical */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px;              /* POSICIÓN REAL */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #333;
+}
+
+/* Cada item */
+.experience-timeline .timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+/* BOLITA VERDE */
+.experience-timeline .timeline-item::before {
+  content: "";
+  position: absolute;
+  left:-27px;             /* MISMO PUNTO QUE LA LÍNEA */
+  transform: translate(-50%, 0);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
+  z-index: 2;
+}
+
+/* Títulos */
+.experience-timeline .timeline-item h3 {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Empresa y fecha */
+.experience-timeline .timeline-item .job-company {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto */
+.experience-timeline .timeline-item p,
+.experience-timeline .timeline-item ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.experience-timeline .timeline-item ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+.experience-timeline .timeline-item li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.experience-timeline .timeline-item li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color);
+}
+
+.tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #1A1A1A;
+  color: var(--primary-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+/* AJUSTE REAL → alinear texto con bolita */
+.experience-timeline .timeline-item h3,
+.experience-timeline .timeline-item p,
+.experience-timeline .timeline-item .job-company,
+.experience-timeline .timeline-item ul {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Ajusta la separación entre la bola y el texto */
+.experience-timeline .timeline-item h3 {
+    padding-left: 20px; /* distancia perfecta */
+}
+
+.experience-timeline .timeline-item p,
+.experience-timeline .timeline-item .job-company,
+.experience-timeline .timeline-item ul {
+    padding-left: 20px; /* igual que h3 */
+}

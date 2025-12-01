@@ -1,19 +1,16 @@
 import React from 'react';
-import socialLinks from '../data/footer.json';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-socials">
-        {socialLinks.map((link) => (
-          <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
-            <i className={link.icon}></i>
-          </a>
-        ))}
-      </div>
-      <div className="footer-credit">
-        <p>Diseñado y construido por Abderrahman Essaddiki</p>
-      </div>
+    <footer style={{
+      textAlign: 'center',
+      padding: '2rem 0',
+      fontSize: '0.8rem',
+      color: '#888',
+    }}>
+      <hr style={{border: '1px solid #333', marginBottom: '2rem'}}/>
+      <p>© 2025 Abderrahman Essaddiki. Todos los derechos reservados.</p>
+      <p>Majadahonda, Comunidad de Madrid, España</p>
     </footer>
   );
 };

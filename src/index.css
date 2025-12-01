@@ -1,1 +1,20 @@
-/* Add your global styles here */
+:root {
+    --primary-color: #00ff88;
+    --background-color: #000000;
+    --text-color: #EAEAEA;
+    --font-mono: "JetBrains Mono", monospace;
+    --card-background: #1a1a1a;
+    --border-color: #2a2a2a;
+    --font-family: monospace, "Courier New", monospace;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-mono);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

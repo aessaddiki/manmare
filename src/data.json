@@ -1,0 +1,105 @@
+
+{
+    "personal": {
+      "nombre": "Abderrahman Essaddiki",
+      "profesion": "Técnico RF & TI · Virtualización · Comunicaciones críticas",
+      "foto": "/profile.png",
+      "ubicacion": "Majadahonda, Comunidad de Madrid, España",
+      "email": "aessaddiki24@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/manessaddiki/",
+      "github": "https://github.com/abdessaddiki",
+      "cv": "/CV-Abderrahman-Essaddiki.pdf"
+    },
+    "about": "Especialista en sistemas críticos y tecnología, con experiencia en sanidad, seguridad y emergencias. He participado en proyectos de alto impacto: radiocomunicaciones para organismos estatales, sistemas hospitalarios y optimización de infraestructuras IT, mejorando la fiabilidad de los servicios y reduciendo incidencias críticas. Me definen la fiabilidad, la resolución de problemas y la capacidad de adaptarme rápido para aportar valor donde la tecnología protege vidas y mejora procesos.",
+    "projects": [
+      {
+        "nombre": "MANMUSICMAD",
+        "subtitulo": "Sello discográfico / proyecto musical | 2019 - 2024",
+        "descripcion": "Promoción de artistas, gestión de lanzamientos, estrategia de marca, contenido visual y eventos."
+      },
+      {
+        "nombre": "Community Manager (clientes locales)",
+        "subtitulo": "Servicio |",
+        "descripcion": "Creación y programación de contenido, análisis de métricas y gestión de comunidades para sectores hostelería, estética y eventos."
+      }
+    ],
+    "skills": [
+      {"name": "Soporte 24/7"},
+      {"name": "Redes y seguridad"},
+      {"name": "Virtualización (VMware, Hyper-V)"},
+      {"name": "Sistemas de RF (TETRA)"},
+      {"name": "Bases de datos (SQL)"},
+      {"name": "MS Azure / Entra ID"},
+      {"name": "PowerAutomate"}
+    ],
+    "languages": [
+      {"name": "Español", "level": "Nativo"},
+      {"name": "Árabe", "level": "Nativo"},
+      {"name": "Inglés", "level": "B1"},
+      {"name": "Francés", "level": "Básico"},
+      {"name": "Bereber", "level": "Básico"}
+    ],
+    "experience": [
+      {
+        "puesto": "Técnico de Sistemas de RF / Mantenimiento de Comunicaciones Críticas",
+        "empresa": "Grupo Amper",
+        "periodo": "may 2024 - actualidad",
+        "responsabilidades": [
+          "Técnico 24/7 y mantenimiento de sistemas de comunicaciones críticas (Policía, SAMUR, 112, Guardia Civil).",
+          "Instalación y configuración de TETRA, UHF, VHF y sistemas analógicos.",
+          "Integración con plataformas GEMYC y Emersys; creación de paquetes EXE y scripts batch.",
+          "Etiquetado técnico (Petrel) y monitorización GPS.",
+          "Gestión y depuración de BBDD (Oracle, MariaDB, MySQL) usando SQL."
+        ],
+        "skills": ["TETRA", "RF", "Microsoft Azure", "Motorola", "Oracle", "MySQL"]
+      },
+      {
+        "puesto": "Ingeniero de soporte de TI",
+        "empresa": "Cegid",
+        "periodo": "ene 2023 - may 2024",
+        "responsabilidades": [
+          "Administración de entornos Windows y Windows Server.",
+          "Soporte e integración de PeopleNet y E-MIND, migración de dominios y scripting (PowerShell).",
+          "Virtualización (VMware ESXi v7, VirtualBox, Hyper-V).",
+          "Auditoría de logs y resolución de incidencias (100+ casos)."
+        ],
+        "skills": ["PowerShell", "VMware", "PeopleNet", "SQL", "Windows Server"]
+      },
+      {
+        "puesto": "Técnico en Administración de Sistemas Informáticos en Red",
+        "empresa": "HORUS HARDWARE, S.A.",
+        "periodo": "mar 2021 - ene 2023",
+        "responsabilidades": [
+          "Instalación y mantenimiento de servidores Windows y Linux (CentOS).",
+          "Gestión de PostgreSQL, Apache, Mirth Connect y VPNs (Draytek).",
+          "Soporte a aplicaciones clínicas y formación a usuarios."
+        ],
+        "skills": ["Linux", "PostgreSQL", "Apache", "VPN"]
+      }
+    ],
+    "education": [
+        {
+            "titulo": "Grado Superior en Sistemas de Telecomunicaciones e Informáticos",
+            "institucion": "IES El Burgo Ignacio Echeverría",
+            "periodo": "2022 - 2024"
+        },
+        {
+            "titulo": "Grado Medio en Telecomunicaciones",
+            "institucion": "IES El Burgo Ignacio Echeverría",
+            "periodo": "2021 - 2022"
+        },
+        {
+            "titulo": "Bachillerato (Ciencias Sociales)",
+            "institucion": "IES José Saramago",
+            "periodo": "2019 - 2021"
+        }
+    ],
+    "certifications": [
+        {"titulo": "Certificado Profesional de Fundamentos de Seguridad - Microsoft/LinkedIn (oct 2025)"},
+        {"titulo": "DevOps esencial - LinkedIn (oct 2025)"},
+        {"titulo": "Windows Server: Active Directory - LinkedIn (2025)"},
+        {"titulo": "English Placement Test - B1 - European Commission (sep 2024)"},
+        {"titulo": "Etiquetado PETREL - Fundae (dic 2024)"},
+        {"titulo": "Protección de Datos - Grupo Amper (jul 2024)"}
+    ]
+}

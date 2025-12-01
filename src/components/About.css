@@ -1,0 +1,27 @@
+#about {
+    padding: 2rem 0;              /* mismo estilo de sección */
+    background-color: #000;
+    color: #e6fdf0;
+    
+    /* quitar flex y centrado */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+
+    max-width: 800px;             /* igual que el párrafo */
+    margin: 0 auto;               /* centra el bloque respecto a la página */
+}
+
+
+
+#about p {
+    max-width: 800px;
+    width: 100%;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0;
+
+    /* hacer el texto idéntico al de experiencia */
+    font-size: 0.9rem;
+    color: var(--text-color);
+}

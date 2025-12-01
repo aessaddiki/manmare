@@ -1,1 +1,88 @@
-/* Add your styles for the App component here */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #00ff88;
+  --background-color: #000000;
+  --text-color: #EAEAEA;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none; /* Oculta el cursor nativo */
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container > * {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Estilo de título de sección actualizado */
+h2 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+}
+
+h2::before {
+  content: '> ';
+  white-space: pre;
+}
+
+h2::after {
+  content: '_';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+h3 {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+#about h2 {
+  border-bottom: none;
+}
+
+.card h3+p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+  text-align: left;
+  font-family: monospace, "Courier New", monospace;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2rem 0;
+}
+
+.footer-content {
+  font-size: 0.9rem;
+  color: #888;
+}

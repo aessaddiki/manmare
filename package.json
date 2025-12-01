@@ -1,18 +1,22 @@
 {
-  "name": "portfolio-abderrahman",
-  "version": "1.0.0",
+  "name": "portfolio-abderrahman-essaddiki",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^7.2.4"
+    "@vitejs/plugin-react": "^4.1.1",
+    "vite": "^5.0.0"
   }
 }

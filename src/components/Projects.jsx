@@ -1,19 +1,17 @@
 import React from 'react';
-import projects from '../data/projects.json';
+import data from '../data.json';
+import './Projects.css'; // Importamos el nuevo CSS
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects">
-      <h2>Proyectos</h2>
+    <section id="projects">
+      <h2>Proyectos y Logros</h2>
       <div className="projects-grid">
-        {projects.map((project) => (
-          <div key={project.title} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="project-links">
-              <a href={project.repo} target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href={project.live} target="_blank" rel="noopener noreferrer">Ver en vivo</a>
-            </div>
+        {data.projects.map((project, index) => (
+          <div key={index} className="project-card">
+            <h3>{project.nombre}</h3>
+            <p className="project-subtitle">{project.subtitulo}</p>
+            <p>{project.descripcion}</p>
           </div>
         ))}
       </div>
