@@ -1,27 +1,25 @@
 #about {
-    padding: 2rem 0;              /* mismo estilo de sección */
-    background-color: #000;
-    color: #e6fdf0;
-    
-    /* quitar flex y centrado */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-
-    max-width: 800px;             /* igual que el párrafo */
-    margin: 0 auto;               /* centra el bloque respecto a la página */
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  border: 1px solid #333;
+  transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
+#about:hover {
+  border-color: #00f2a0;
+  transform: translateY(-5px);
+}
 
+#about h2 {
+  color: #00f2a0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
 
 #about p {
-    max-width: 800px;
-    width: 100%;
-    line-height: 1.6;
-    text-align: left;
-    padding: 0;
-
-    /* hacer el texto idéntico al de experiencia */
-    font-size: 0.9rem;
-    color: var(--text-color);
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
 }

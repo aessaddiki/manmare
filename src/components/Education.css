@@ -1,15 +1,24 @@
 /* EDUCACIÓN */
 #education {
-  margin-top: 2rem;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto 0;
+  border: 1px solid #333;
+  transition: border-color 0.3s ease, transform 0.3s ease;
   max-width: 800px;
-  margin-inline: auto;
+}
+
+#education:hover {
+  border-color: #00f2a0;
+  transform: translateY(-5px);
 }
 
 #education h2 {
-  color: var(--primary-color);
+  color: #00f2a0;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  padding-left: 40px; /* igual que experiencia */
+  padding-left: 0; /* Reiniciado para el nuevo contenedor */
 }
 
 .education-timeline {

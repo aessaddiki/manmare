@@ -1,15 +1,23 @@
 /* EXPERIENCIA */
 #experience {
-  padding-top: 4rem;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto 0;
+  border: 1px solid #333;
+  transition: border-color 0.3s ease, transform 0.3s ease;
   max-width: 800px;
-  margin: 0 auto;
+}
+
+#experience:hover {
+  border-color: #00f2a0;
+  transform: translateY(-5px);
 }
 
 #experience h2 {
-  font-size: 1.5rem;
+  color: #00f2a0;
   margin-bottom: 1.5rem;
-  color: var(--primary-color);
-  padding-left: 40px; /* alineado con timeline */
+  font-size: 1.5rem;
 }
 
 /* Contenedor del timeline */

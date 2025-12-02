@@ -4,7 +4,7 @@ import './Certifications.css'; // Importamos el nuevo CSS
 
 const Certifications = () => {
   return (
-    <section id="certifications">
+    <section id="certifications" className="hover-glow">
       <h2>Certificaciones y Formación</h2>
       <div className="certifications-list">
         {data.certifications.map((certification, index) => (

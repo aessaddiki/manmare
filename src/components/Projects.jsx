@@ -1,10 +1,21 @@
 import React from 'react';
+import './Projects.css';
+import { motion } from 'framer-motion';
 import data from '../data.json';
-import './Projects.css'; // Importamos el nuevo CSS
 
 const Projects = () => {
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <section id="projects">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={sectionVariants}
+    >
       <h2>Proyectos y Logros</h2>
       <div className="projects-grid">
         {data.projects.map((project, index) => (
@@ -15,7 +26,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,47 +1,85 @@
-/* Projects.css */
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-.project-card {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  padding: 1.5rem;
-  transition: border-color 0.3s ease, transform 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  border-color: #00f2a0;
-  transform: translateY(-5px);
-}
-
-.project-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-color);
-  font-weight: 700;
-}
-
-.project-card .project-subtitle {
-  font-size: 0.8rem;
-  color: #888;
-  margin-bottom: 1rem;
-}
-
-.project-card p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: var(--text-color);
-}
-
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+/* Contenedor principal — estilo igual que Skills */
+#projects {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: 1px solid #333;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  
+    /* ⚡ ELIMINA CUALQUIER ESPACIO INTERNO ENTRE EL HEADER Y EL GRID */
   }
-}
+  
+  #projects:hover {
+    border-color: #00f2a0;
+    transform: translateY(-5px);
+  }
+  
+  #projects h2 {
+    color: #00f2a0;
+    margin: 0 0 1.5rem 0; /* Solo margen inferior */
+    font-size: 1.5rem;
+  }
+  
+  /* Grid totalmente pegado al section */
+  .projects-grid {
+    margin: 0;      /* ❗ Pegado al h2 */
+    padding: 0;     /* ❗ Sin padding */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;    /* Solo separación entre tarjetas, no con el borde */
+  }
+  
+ /* Tarjetas internas */
+.project-card {
+    background-color: #2a2a2a;
+    padding: 0.5rem;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    /* ⭐ Animación de hover suave */
+    border: 1px solid transparent;
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      transform 0.25s ease,
+      background-color 0.25s ease;
+  }
+  
+  /* Cuando pasas el ratón por encima de cada tarjeta */
+  .project-card:hover {
+    border-color: #00f2a0;
+    box-shadow: 0 0 12px #00ff8844, 0 0 25px #00ff8822;
+    transform: translateY(-3px);
+    background-color: #333; /* un pelín más clara al pasar el ratón */
+  }
+  
+  
+  .project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  .project-card .project-subtitle {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #dddddd;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
