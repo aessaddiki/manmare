@@ -1,18 +1,4 @@
-# Dependencias
-/node_modules
-
-# Build
-/dist
-
-# Archivos de entorno
-.env
-.env.*
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDEs
-.idea/
-.vscode/
+dist/
+build/
+assets/
+*.map
