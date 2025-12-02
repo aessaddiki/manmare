@@ -353,3 +353,30 @@
         display: none
     }
 }
+
+/* === FONDO MATRIX LATERAL === */
+.matrix-bg {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .matrix-column {
+    width: 12px;             /* columnas finas tipo Matrix */
+    color: #0f8;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    opacity: 0.28;           /* suave pero visible */
+    white-space: pre;
+    overflow: hidden;
+    animation: matrixFall 10s linear infinite;
+  }
+  
+  @keyframes matrixFall {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+  

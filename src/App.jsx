@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import Languages from './components/Languages';
 import { motion } from 'framer-motion';
 import data from './data.json';
+import MatrixBackground from './components/MatrixBackground';
 
 const App = () => {
   const projects = data.projects;
@@ -30,14 +31,19 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <CustomCursor />
-      <TopNav />
-      <Hero personal={personal} />
-      <div className="app-content">
-        <div className="container">
+      <MatrixBackground />
+  
+      {/* TODO el contenido va por encima del fondo matrix */}
+      <div className="main-content">
+        <CustomCursor />
+        <TopNav />
+        <Hero personal={personal} />
+  
+        <div className="app-content">
+          <div className="container">
             <About />
             <Experience />
-
+  
             <motion.div
               id="projects"
               initial="hidden"
@@ -47,7 +53,7 @@ const App = () => {
             >
               <Projects projects={projects} />
             </motion.div>
-
+  
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -56,7 +62,7 @@ const App = () => {
             >
               <Skills skills={skills} />
             </motion.div>
-            
+  
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -65,7 +71,7 @@ const App = () => {
             >
               <Languages languages={languages} />
             </motion.div>
-
+  
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -74,7 +80,7 @@ const App = () => {
             >
               <Education education={education} />
             </motion.div>
-
+  
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -83,7 +89,7 @@ const App = () => {
             >
               <Certifications certifications={certifications} />
             </motion.div>
-
+  
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -92,12 +98,14 @@ const App = () => {
             >
               <Contact personal={personal} />
             </motion.div>
-
+  
             <Footer personal={personal} />
+          </div>
         </div>
       </div>
     </div>
   );
+  
 };
 
 export default App;
