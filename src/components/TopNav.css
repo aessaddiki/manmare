@@ -40,7 +40,7 @@
 
 .right-contact a.contact-text {
     font-family: monospace, "Courier New", monospace !important;
-    font-size: 0.9rem !important; /* Añadido !important para asegurar la anulación */
+    font-size: 1.0rem !important; /* Añadido !important para asegurar la anulación */
     letter-spacing: 0;
     font-weight: 400;
     color: #e0e0e0;
