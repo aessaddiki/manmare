@@ -1,83 +1,129 @@
+/* CONTENEDOR GENERAL */
 #contact {
     background-color: var(--background-color);
     color: var(--text-color);
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 3rem;
+    max-width: 950px;
+    margin: 0 auto;
+    border-top: 1px solid #222;
+  }
+  
+  /* TÍTULO */
+  #contact h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+  }
+  
+  /* TEXTO DEBAJO DEL TÍTULO */
+  .contact-description {
     text-align: center;
-    font-family: var(--font-sans);
-}
-
-.contact-links {
-    margin-bottom: 2rem;
+    margin: 0 0 2.5rem 0;
+    font-size: 0.95rem;
+  }
+  
+  /* ENLACES (Email / LinkedIn / GitHub / CV) */
+  .contact-links {
+    margin-bottom: 2.5rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-}
-
-.btn-contact {
+  }
+  
+  .contact-links a {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 2.5rem;
     text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
     font-family: var(--font-mono);
-}
-
-.btn-contact:hover {
+    font-size: 0.95rem;
+    background: transparent;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  }
+  
+  .contact-links a:hover {
     background-color: var(--primary-color);
     color: #000;
-}
-
-.contact-form {
-    max-width: 600px;
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+  }
+  
+  /* FORMULARIO */
+  .contact-form {
+    max-width: 950px;
     margin: 0 auto;
-}
-
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-    .form-grid {
-        grid-template-columns: 1fr 1fr; 
-    }
-}
-
-.contact-form input, .contact-form textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  
+  /* ⬇️ AQUÍ ES DONDE SE DEFINEN LOS RECUADROS BONITOS ⬇️ */
+  .contact-form input,
+  .contact-form textarea {
     width: 100%;
-    padding: 1rem;
-    border: 1px solid #333;
-    background-color: #1a1a1a;
+    padding: 0.95rem 1.1rem;
+    border: 1px solid #262626;
+    background-color: #111;           /* fondo oscuro tipo terminal */
     color: var(--text-color);
-    border-radius: 5px;
-    font-family: var(--font-sans);
-}
-
-.contact-form textarea {
+    border-radius: 3px;               /* bordes suaves */
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    box-shadow: inset 0 0 0 1px #050505;
+  }
+  
+  .contact-form textarea {
     min-height: 150px;
     resize: vertical;
-    margin-bottom: 1.5rem;
-}
-
-.btn-submit {
-    background-color: transparent;
-    color: #00f2a0;
-    border: 1px solid #00f2a0;
-    padding: 1rem;
+  }
+  
+  /* PLACEHOLDER */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #666;
+  }
+  
+  /* FOCUS: BORDE VERDE Y GLOW */
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow:
+      inset 0 0 0 1px var(--primary-color),
+      0 0 8px rgba(0, 255, 136, 0.4);
+  }
+  
+  /* BOTÓN ENVIAR */
+  .contact-form button {
+    margin-top: 0.8rem;
+    padding: 0.95rem;
     width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
     font-family: var(--font-mono);
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 0;
-}
-
-.btn-submit:hover {
-    background-color: #00f2a0;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--primary-color);
     color: #000;
-}
+    box-shadow: 0 0 14px rgba(0, 255, 136, 0.7);
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    #contact {
+      padding: 3rem 1.2rem 2.5rem;
+    }
+  
+    .contact-links a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
